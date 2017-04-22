@@ -1,0 +1,22 @@
+.c-hero
+	position relative
+	padding-top 200px
+	padding-bottom 200px
+	bg 'hero-bg-mobile.jpg'
+	background-size cover
+	
+.c-hero__heading
+	color rgba(255,255,255,.8)
+
+.c-hero__img
+	absolute()
+	max-height 65%
+	right 10%
+	top 55%
+
+@media all and (min-width: 450px)
+	.c-hero__content
+		width 60%
+	.c-hero__img
+		display block
+		
