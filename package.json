@@ -1,6 +1,5 @@
 {
   "name": "beside-the-park",
-  "description": "",
   "dependencies": {
     "axis": "0.6.x",
     "coffee-script": "1.x",
@@ -10,7 +9,7 @@
     "js-pipeline": "0.2.x",
     "jstransformer-marked": "1.x",
     "marked": "0.3.x",
-    "node-sass": "^4.5.2",
-    "rupture": "0.6.x"
+    "rupture": "0.6.x",
+    "stylus": "0.54.x"
   }
 }

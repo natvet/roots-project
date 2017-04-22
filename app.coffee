@@ -3,9 +3,9 @@ rupture      = require 'rupture'
 autoprefixer = require 'autoprefixer-stylus'
 js_pipeline  = require 'js-pipeline'
 css_pipeline = require 'css-pipeline'
-handlebars = require('handlebars')
-layouts = require('handlebars-layouts')
-fs = require ('fs')
+handlebars = require 'handlebars'
+layouts = require 'handlebars-layouts'
+fs = require 'fs'
 
 handlebars.registerHelper(layouts(handlebars));
 
@@ -17,8 +17,12 @@ module.exports =
 
   extensions: [
     js_pipeline(files: 'assets/js/*.js'),
-    css_pipeline(files: 'assets/css/*.scss')
+    css_pipeline(files: 'assets/css/*.styl')
   ]
+
+  stylus:
+    use: [axis(), rupture(), autoprefixer()]
+    sourcemap: true
 
   'coffee-script':
     sourcemap: true
