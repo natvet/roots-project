@@ -1,15 +1,35 @@
 .c-header 
-	position fixed
-	top 0
-	left 0
-	width 100%
-	padding 35px 0
-	background-color rgba(255,255,255,.7)
-	z-index 1
+    position fixed
+    top 0
+    left 0
+    width 100%
+    padding 35px 0
+    background-color rgba(255,255,255,.7)
+    color #758160
+    font-size 32px
+    z-index 1
 
 .c-header__logo
-	text-align center	
-	color $brand-color
-	font-size 32px
-	font-weight 600
-	
+    text-align center   
+    color $brand-color
+    font-size 32px
+    font-weight 600
+    
+.c-nav
+    position absolute
+    top 0
+    right 45px
+
+.c-nav__search
+.c-nav__toggle
+    display inline-block
+    padding 35px 20px
+    
+@media all and (min-width: 768px)
+    .c-nav
+        display block
+        
+@media all and (min-width: 1030px)
+    .c-nav__search
+    .c-nav__toggle
+        padding 35px
