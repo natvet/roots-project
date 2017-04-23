@@ -12,7 +12,7 @@
 .c-hero__img
     absolute()
     left 50%
-    bottom -5%
+    bottom -8%
     max-height 40%
     transform translate3d(-50%,0,0)
 
@@ -64,7 +64,14 @@
 @media all and (min-width: 768px)
     .c-hero
         border-bottom 3px solid #86b640
-        bg 'hero-bg-desktop.jpg'
+        background-image url('/img/hero-bg-desktop.jpg')
+    .c-hero__content
+        width 40%
+    .c-hero__img
+        max-height 85%
+        right auto
+        left 50%
+        top 40%
 
 @media all and (min-width: 992px)
     .c-learn-more__row
