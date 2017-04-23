@@ -10,6 +10,7 @@ fs = require 'fs'
 handlebars.registerHelper(layouts(handlebars));
 
 handlebars.registerPartial('layout', fs.readFileSync 'views/layout.hbs', 'utf-8');
+handlebars.registerPartial('header', fs.readFileSync 'views/_header.hbs', 'utf-8');
 
 
 module.exports =
