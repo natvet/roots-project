@@ -1,10 +1,10 @@
 $(document).ready(function(){
     let templateScript = $("#index-template").html(),
-        template = Handlebars.compile(theTemplateScript),
+        template = Handlebars.compile(templateScript),
         context={
 
         },
-        compiledHtml = theTemplate(context);
+        compiledHtml = template(context);
     $('body').append(compiledHtml);
 });
 
