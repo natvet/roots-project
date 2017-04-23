@@ -5,8 +5,6 @@
     width 100%
     padding 35px 0
     background-color rgba(255,255,255,.7)
-    color #758160
-    font-size 32px
     z-index 1
 
 .c-header__logo
@@ -18,18 +16,26 @@
 .c-nav
     position absolute
     top 0
-    right 45px
+    right 50px
 
-.c-nav__search
-.c-nav__toggle
+.c-nav__icon
+    height 109px
+    width 85px
     display inline-block
-    padding 35px 20px
+    background-repeat no-repeat
+    background-position 50% 50%
+    background-size 25%
+    
+.c-nav__search
+    background-image url('/img/search-icon.png')
+
+.c-nav__toggle
+    background-image url('/img/toggle-icon.png')
     
 @media all and (min-width: 768px)
     .c-nav
         display block
         
 @media all and (min-width: 1030px)
-    .c-nav__search
-    .c-nav__toggle
-        padding 35px
+    .c-nav__icon
+        width 115px
