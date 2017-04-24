@@ -30,7 +30,40 @@ p
     paragraph()
     margin-bottom 30px
 ul
-    list-style none
+    list-style none   
+.c-btn 
+    display inline-block
+    padding 15px 0
+    position relative 
+    overflow hidden
+    transition()
+.c-btn:focus,
+.c-btn:active,
+.c-btn:focus:active 
+    outline none
+.c-btn span
+    opacity .7
+    display inline-block
+    -webkit-backface-visibility hidden
+    -moz-backface-visibility hidden
+    backface-visibility hidden
+    transition()
+.c-btn:hover span 
+    -webkit-transform translateY(300%);
+    -moz-transform translateY(300%);
+    -ms-transform translateY(300%);
+    transform translateY(300%);
+.c-btn:before
+    content attr(data-title)
+    position absolute
+    left 0
+    padding inherit
+    top -100%
+    -webkit-transition all 0.3s
+    -moz-transition all 0.3s
+    transition all 0.3s
+.c-btn:hover:before 
+    top 0
 .o-section
     padding 30px
 .o-section__content
