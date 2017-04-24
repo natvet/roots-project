@@ -55,7 +55,7 @@ $(document).ready(function(){
         $(window).scroll(function (e) {
             let scrolled = $(window).scrollTop() + 1,
                 res = -(scrolled * 0.04),
-                transform = 'translate3d(0,' + res + '%,0)';
+                transform = 'translateY(' + res + '%)';
             $('.js-scroll').css('transform', transform);
         });
     }
