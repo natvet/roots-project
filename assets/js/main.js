@@ -51,10 +51,19 @@ $(document).ready(function(){
             lastScrollTop = scroll;
         }
     }
+    function phoneParallax() {
+        $(window).scroll(function (e) {
+            let scrolled = $(window).scrollTop() + 1,
+                res = -(scrolled * 0.04),
+                transform = 'translate3d(0,' + res + '%,0)';
+            $('.js-scroll').css('transform', transform);
+        });
+    }
     function init() {
         toggleMenu();
         openSearch();
         hideHeader();
+        phoneParallax();
     }
     init();
 });
