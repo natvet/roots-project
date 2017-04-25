@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    let templateScript = $("#index-template").html(),
+    let templateScript = $('#index-template').html(),
         template = Handlebars.compile(templateScript),
         context={
 
