@@ -7,4 +7,3 @@ $(document).ready(function(){
         compiledHtml = template(context);
     $('body').append(compiledHtml);
 });
-
