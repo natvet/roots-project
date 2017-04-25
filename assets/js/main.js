@@ -31,10 +31,9 @@ $(document).ready(function(){
             didScroll = true;
         });
         setInterval(function() {
-            if (didScroll) {
-                hasScrolled();
-                didScroll = false;
-            }
+            didScroll ? 
+            (hasScrolled(),
+            didScroll = false) : null
         }, 250);
         function hasScrolled() {
             let scroll = $(this).scrollTop();
@@ -54,8 +53,8 @@ $(document).ready(function(){
     function phoneParallax() {
         $(window).scroll(function (e) {
             let scrolled = $(window).scrollTop() + 1,
-                res = -(scrolled * 0.04),
-                transform = 'translateY(' + res + '%)';
+                result = -(scrolled * 0.04),
+                transform = 'translateY(' + result + '%)';
             $('.js-scroll').css('transform', transform);
         });
     }
